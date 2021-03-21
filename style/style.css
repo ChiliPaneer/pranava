@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@390&display=swap");
+
+header {
+  background-color: #831539;
+}
+
+body {
+  position: relative;
+  background-color: rgb(240, 229, 169);
+  min-height: 100vh;
+  padding-bottom: 120px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  height: 120px;
+  background-color: #831539;
+  text-align: center;
+  padding-top: 50px;
+  font-family: "Libre Franklin", sans-serif;
+  color: white;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+
+div {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+/*Book Page styling */
+
+.book-box {
+  /* background-color: blue; */
+  margin: auto;
+}
+
+.book-shell {
+  /* background-color: rgb(209, 17, 235); */
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  justify-content: center;
+  border-top-style: solid;
+  border-color: rgb(172, 172, 172);
+  border-width: 1px;
+}
+
+.book-cover {
+  /* background-color: yellow; */
+  width: 300px;
+  height: auto;
+  width: 400px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.book-image {
+  /* display: block; */
+  height: 250px;
+  margin: auto;
+  margin-right: 20px;
+}
+
+.book-info {
+  /* background-color: green; */
+  max-width: 600px;
+}
+
+.content {
+  max-width: 1350px;
+  /* min-width: 400px; */
+  margin: 0px;
+}
+.book-title {
+  font-size: 20px;
+}
+
+.book-caption {
+}
+
+@media only screen and (max-width: 600px) {
+  .book-shell {
+    flex-direction: column;
+  }
+}
+
+/* Music Page Styling */
+
+.album-shell {
+  /* width: 600px; */
+  margin-bottom: 100px;
+}
+.album-cover-shell {
+  margin-bottom: -160px;
+}
+
+.album-cover-image {
+  height: 200px;
+  width: 200px;
+  margin-left: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px 2px grey;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(155, 33, 33);
+}
+
+.album {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(129, 27, 27);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.album-title {
+  /* background-color:rgb(255, 255, 255); */
+  margin-left: 225px;
+  padding-left: 30px;
+  font-size: 35px;
+}
+
+.album-desc {
+  margin-left: 225px;
+  padding-left: 30px;
+}
+
+.songs {
+  margin-top: 120px;
+}
+
+.song {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(155, 33, 33);
+  /* border-radius: 3px; */
+  border-right: none;
+  border-left:none;
+  border-bottom: none;
+  margin: 5px;
+  padding: 8px;
+  height: 50px;
+
+  display: grid;
+  grid-template-columns: 32% 20% 15% auto 80px;
+  grid-template-areas: "name ragam talam singer buttons";
+}
+
+.song-name {
+  grid-area: name;
+}
+.song-ragam {
+  grid-area: ragam;
+}
+.song-talam {
+  grid-area: talam;
+}
+.song-singer {
+  grid-area: singer;
+}
+.song-buttons {
+  display:flex;
+  flex-direction: row;
+  margin: 0px 10px;
+}
+
+.playpause {
+  width: 30px;
+  height: 30px;
+  /* background-color: orange; */
+  border-radius: 50%;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-left: 16px solid rgb(182, 66, 66);
+  border-bottom: 8px solid transparent;
+  margin-top: 5px;
+}
+
+.samplePlaying {
+  background-image: url("../assets/pause-circle-fill.svg");
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0);
+  border-style: none;
+}
+.samplePaused {
+  background-image: url("../assets/play-circle-fill.svg");
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0);
+  border-style: none;
+}
+
+.downloadButton{
+  background-image: url("../assets/cloud-arrow-down-fill.svg");
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0);
+  border-style: none;
+}
+
+/* mobile phone media query */
+@media only screen and (max-width: 750px) {
+  .song-ragam {
+    display: none;
+  }
+  .song-talam {
+    display: none;
+  }
+  .song-singer {
+    display: none;
+  }
+  .song-buttons {
+    margin-right: 20px;
+  }
+  .song {
+    grid-template-columns: 80% auto;
+    padding-right: 30px;
+  }
+
+  .album-shell {
+    /* width: 600px; */
+    margin-bottom: 100px;
+    margin-top: 50px;
+  }
+  .album-cover-shell {
+    margin-bottom: -110px;
+  }
+
+  .album-cover-image {
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: none;
+  }
+
+  .album {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(129, 27, 27);
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .album-title {
+    /* background-color:rgb(255, 255, 255); */
+    margin-left: 100px;
+    padding-left: 30px;
+    font-size: 22px;
+    margin-top: 8px;
+  }
+  .album-desc{
+    display: none;
+  }
+}
+
+/* musicial embeds */
+.yt-emebd{
+  border-radius: 10px !important;
+}
