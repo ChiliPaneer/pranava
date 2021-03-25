@@ -323,6 +323,9 @@ div {
   .song-buttons {
     margin-right: 20px;
   }
+  .songs{
+    margin-top: 70px;
+  }
   .song {
     grid-template-columns: 80% auto;
     padding-right: 30px;
