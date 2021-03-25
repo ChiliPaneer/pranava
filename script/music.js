@@ -500,7 +500,7 @@ function makeSong(songData, albumString) {
 
   let songTalam = document.createElement("div");
   songTalam.setAttribute("class", "song-talam");
-  songTalam.textContent = songData.ralam;
+  songTalam.textContent = songData.talam;
 
   let songSinger = document.createElement("div");
   songSinger.setAttribute("class", "song-singer");
