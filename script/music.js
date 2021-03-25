@@ -582,6 +582,32 @@ function makeAlbun(albumData) {
   albumDescription.setAttribute("class", "album-desc");
   albumDescription.textContent = albumData.Description;
 
+  let colHeaders = document.createElement("div");
+  colHeaders.setAttribute("class", "album-header-row");
+  
+
+  let songNameHead = document.createElement("div");
+  songNameHead.setAttribute("class","col-header");
+  songNameHead.textContent="Name";
+
+  let songRagamHead = document.createElement("div");
+  songRagamHead.setAttribute("class","col-header");
+  songRagamHead.textContent="Ragam";
+
+  let songTalamHead = document.createElement("div");
+  songTalamHead.setAttribute("class","col-header");
+  songTalamHead.textContent="Talam";
+
+  let songSingerHead = document.createElement("div");
+  songSingerHead.setAttribute("class","col-header");
+  songSingerHead.textContent="Singer";
+
+  colHeaders.appendChild(songNameHead);
+  colHeaders.appendChild(songRagamHead);
+  colHeaders.appendChild(songTalamHead);
+  colHeaders.appendChild(songSingerHead);
+
+
   let songsList = document.createElement("div");
   songsList.setAttribute("id", albumData.Album);
   songsList.setAttribute("class", "songs");
@@ -592,6 +618,7 @@ function makeAlbun(albumData) {
 
   album.appendChild(albumTitle);
   album.appendChild(albumDescription);
+  album.appendChild(colHeaders);
   album.appendChild(songsList);
 
   albumCoverShell.appendChild(albumImage);

@@ -15,12 +15,29 @@ footer {
   position: absolute;
   bottom: 0;
   width:100%;
-  height: 120px;
+  height: 140px;
   background-color: #831539;
-  text-align: center;
-  padding-top: 50px;
   font-family: "Libre Franklin", sans-serif;
   color: white;
+}
+
+.footer-content{
+  padding:15px 15px 0px 15px;
+  display: flex;
+  flex-direction: row;
+}
+.contact-info{
+  display:flex;
+  flex-direction: column;
+}
+
+.footer-text{
+  text-align: center;
+}
+
+.address{
+  position: absolute;
+  right:15px;
 }
 
 h1 {
@@ -56,11 +73,10 @@ div {
 
 .book-cover {
   /* background-color: yellow; */
-  width: 300px;
   height: auto;
   width: 400px;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 2px;
 }
 
 .book-image {
@@ -79,17 +95,82 @@ div {
   max-width: 1350px;
   /* min-width: 400px; */
   margin: 0px;
+  padding:0px;
 }
+
+
 .book-title {
   font-size: 20px;
 }
 
 .book-caption {
+  font-size: 18px;
 }
+
+
+
+/*MV page styling */
+
+
+.mv-shell {
+  /* background-color: rgb(209, 17, 235); */
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  justify-content: center;
+  border-top-style: solid;
+  border-color: rgb(172, 172, 172);
+  border-width: 1px;
+}
+
+.mv-text{
+  margin-right: 30px;
+}
+
+.mv-title {
+  font-size: 20px;
+}
+
+.mv-date{
+  font-size: small;
+}
+
+.mv-desc{
+  font-size: 14px;
+}
+
+.mv-container {
+  min-width: 480px;
+  height: 270px;
+}
+
+
+
 
 @media only screen and (max-width: 600px) {
   .book-shell {
     flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  
+  .mv-shell {
+    flex-direction: column;
+  }
+
+  .mv-container {
+    margin: auto;
+    margin-top: 25px;
+    min-width: 80%;
+    height: 100%;
+  }
+
+  .mv-text{
+    margin-right: 0px;
+    min-width: 300px;
   }
 }
 
@@ -132,10 +213,26 @@ div {
 .album-desc {
   margin-left: 225px;
   padding-left: 30px;
+  min-height:100px;
 }
 
+.album-header-row{
+  margin: 5px;
+  padding:8px;
+  padding-bottom: 0;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 32% 20% 15% auto 80px;
+}
+
+.col-header{
+  color:rgb(155, 33, 33);
+  font-style:bold;
+}
+
+
 .songs {
-  margin-top: 120px;
+  
 }
 
 .song {
@@ -264,6 +361,10 @@ div {
     margin-top: 8px;
   }
   .album-desc{
+    display: none;
+  }
+
+  .col-header{
     display: none;
   }
 }

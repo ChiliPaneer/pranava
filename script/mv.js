@@ -60,7 +60,8 @@ function makeMV(mvData) {
 
     let mv = document.createElement("iframe");
     mv.setAttribute("width", "100%");
-    mv.setAttribute("height", "100%");
+    mv.setAttribute("height", "240px");
+    mv.setAttribute("style", "border-radius: 20px; padding: 10px");
     mv.setAttribute("src", "https://www.youtube-nocookie.com/embed/" + mvData.videoID);
     mv.setAttribute("frameborder", "0");
     mv.setAttribute("allow", "allow", "fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
@@ -81,7 +82,7 @@ function makeMV(mvData) {
 
 
 function populateMV() {
-    let main = document.getElementById("content");
+    let main = document.getElementById("mv-box");
     mvData.data.forEach((mv) => {
         main.appendChild(makeMV(mv));
     });
