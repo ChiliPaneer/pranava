@@ -24,7 +24,10 @@ body {
   font-family: 'Syne Mono', monospace;
   font-size: 25px;
 }
-
+ 
+main{
+  margin-bottom: 40px;
+}
 footer {
   position: absolute;
   bottom: 0;
@@ -33,6 +36,7 @@ footer {
   background-color: #831539;
   font-family: "Libre Franklin", sans-serif;
   color: white;
+
 }
 
 .footer-content{
