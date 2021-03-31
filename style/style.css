@@ -1,14 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@390&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
 header {
   background-color: #831539;
+  
 }
+
+h1{
+  font-family:  'Akaya Kanadaka', cursive !important;
+  font-size: 60px;
+}
+
+
 
 body {
   position: relative;
   background-color: rgb(240, 229, 169);
   min-height: 100vh;
   padding-bottom: 120px;
+}
+
+.nav-link{
+  font-family: 'Syne Mono', monospace;
+  font-size: 25px;
 }
 
 footer {
