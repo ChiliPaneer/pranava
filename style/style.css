@@ -11,6 +11,13 @@ h1{
   font-size: 60px;
 }
 
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-family:  'Akaya Kanadaka', cursive !important;
+    font-size: 40px;
+  }
+}
+
 
 
 body {
