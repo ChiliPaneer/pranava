@@ -52,17 +52,25 @@ footer {
   flex-direction: row;
 }
 .contact-info{
+  margin-top: 15px;
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
+}
+
+.contact-info > a {
+  margin-left: 15px;
 }
 
 .footer-text{
   text-align: center;
+  margin-top: 25px;
+  
 }
 
 .address{
   position: absolute;
-  right:15px;
+  right:35px;
+  bottom: 50px;
 }
 
 h1 {
