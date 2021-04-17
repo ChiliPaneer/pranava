@@ -22,7 +22,7 @@ h1{
 
 body {
   position: relative;
-  background-color: rgb(240, 229, 169);
+  background-color: #EEEEEE; /* rgb(240, 229, 169);*/
   min-height: 100vh;
   padding-bottom: 120px;
 }
