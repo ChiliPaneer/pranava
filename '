@@ -60,7 +60,7 @@
       <div class="col-sm-8">
           <h2> About Pranava</h2>
           <p>Testing one two three four </p>
-         <h2>About the Author</h2>
+        <h2>About the Author</h2>
         <p>
           Uma Eyyunni graduated with a masters degree in Ear, Nose, Throat
           (ENT) surgery from Osmania Medical, Hyderabad. She married Ram
@@ -109,7 +109,6 @@
           passions. The Eyyunni family is a great asset to the local community
           with their sincere voluntary services.
         </p>
-        <h5>Disclaimer</h5>
       </div>
     </div>
   </main>
