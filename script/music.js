@@ -702,6 +702,7 @@ function makeSong(songData, albumString) {
   let download = document.createElement("a");
   download.setAttribute("class", "downloadButton");
   download.setAttribute("target", "_blank");
+  download.setAttribute("onclick", "alertDownload()");
   download.setAttribute(
     "href",
     "./assets/Music/" + albumString + "/" + songData.fileName
@@ -831,4 +832,8 @@ function pauseMus(songName) {
   currentSample.setAttribute("class", "samplePaused");
   let mus = document.getElementById(songName);
   mus.pause();
+}
+
+function alertDownload() {
+	alert("This is copyrighted, please contact info@pranavamusic.net if you would like to use the music files for personal use.");
 }
