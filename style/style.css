@@ -46,6 +46,10 @@ footer {
 
 }
 
+footer  a, a:hover, a:active, a:visited {
+	color: white !important;
+}
+
 .footer-content{
   padding:15px 15px 0px 15px;
   display: flex;
